@@ -32,6 +32,8 @@
 
 #define CONFIG_USB_HCI	1
 
+#define CONFIG_SUPPORT_HW_WPS_PBC 1
+
 
 #define PLATFORM_LINUX	1
 

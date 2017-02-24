@@ -1,6 +1,6 @@
 modname := rtl8812au
 DKMS := dkms
-modver := 4.3.14
+modver := $(shell git symbolic-ref --short HEAD)
 
 # directory in which generated files are stored
 DKMS_DEST := /usr/src/$(modname)-$(modver)
