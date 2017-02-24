@@ -1,0 +1,4 @@
+# Replace NIC_MAC_ADDR with the mac addr of your nic
+# Replace wlan3 with a name which feet your needs
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="8812au", ATTR{address}=="NIC_MAC_ADDR", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="wlan*", NAME="wlan3"
+
