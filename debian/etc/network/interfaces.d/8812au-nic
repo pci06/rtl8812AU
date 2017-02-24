@@ -1,0 +1,11 @@
+# DNSSERVER_IP Could be the same IP of the nic serve by a dnsmasq process
+
+allow-hotplug wlan3
+iface wlan3 inet static
+	dns-nameserver DNSSERVER_IP
+	dns-search jungle.net
+	address NIC_IP
+	netmask 255.255.255.0
+	down /bin/systemctl stop hostapd
+
+iface wlan3 inet6 auto
