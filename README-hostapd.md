@@ -1,7 +1,7 @@
 #Hostapd
 The directory hostapd/ contains stuff to ease creating an AP
 
-## Get hostapd sourve v2.4
+## Get hostapd source v2.4
 
 Example:
 ```
